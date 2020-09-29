@@ -20,7 +20,7 @@ course_prefix = re.compile("^[^-]+ - ")
 
 def create_filepath(course, path):
     course_name = course["OrgUnit"]["Name"]
-    course_name = course_prefix.sub("", course_name.replace(":", "-"))
+    course_name = course_prefix.sub("", course_name.replace(":", " -"))
     return "/".join(
         [clean_filename(course_name)] + [clean_filename(module["Title"]) for module in path])
 
