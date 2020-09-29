@@ -7,7 +7,7 @@ from os import path
 
 from tqdm import tqdm
 
-filename_whitelist = " +:_ë-.'ï" + string.ascii_letters + string.digits
+filename_whitelist = " +_ë-.'ï" + string.ascii_letters + string.digits
 
 
 def clean_filename(name):
