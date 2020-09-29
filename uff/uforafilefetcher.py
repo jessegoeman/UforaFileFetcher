@@ -38,7 +38,7 @@ def run():
         "setup": [],
         "courses": ["<config>"],
         "download": ["<course_id>", "<config>", "[output_dir]"],
-        "sync": ["<config>"]
+        "sync": ["<config>ffff"]
     }
     args = sys.argv
     check_command_valid(args, commands)
